@@ -1,0 +1,26 @@
+body{
+background: grey;
+}
+
+.tt{
+
+        font-family: 'Times New Roman', Times, serif; /* Cambia 'Roboto' a la fuente que hayas elegido */
+        font-size: 20px;  /* Ajusta el tamaño de la fuente según tus necesidades */
+    
+    
+}
+
+.header{
+    height: 70vh;
+    background-image: linear-gradient(
+      to top, 
+      rgba(255, 255, 255, 0.607) 0%,  /* Cambia el color y la opacidad según sea necesario */
+      rgba(255, 255, 255, 0.609) 100%
+    ), 
+    url(/img/icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}

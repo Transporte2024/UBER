@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>HOTELES</title>
+</head>
+<body>
+    <div class="loader"></div>
+
+
+ 
+        <!--fecha-->
+        <center>
+          <nav class="horita">
+            <div id="fecha-actual"></div>
+          <script>
+            const fechaActual = new Date();
+            const dia = fechaActual.getDate();
+            const mes = fechaActual.getMonth() + 1; 
+            const anio = fechaActual.getFullYear();
+            const fechaFormateada = `${dia}/${mes}/${anio}`;
+            document.getElementById("fecha-actual").textContent = `Fecha actual: ${fechaFormateada}`;
+          </script>
+          
+        <!--hora-->
+          <nav class="relojcitoo">
+        <div id="reloj"></div>
+        <script>
+          function actualizarReloj() {
+            const ahora = new Date();
+            const hora = ahora.getHours();
+            const minutos = ahora.getMinutes();
+            const segundos = ahora.getSeconds();
+            const reloj = document.getElementById("reloj");
+            reloj.textContent = `${hora}:${minutos}:${segundos}`;
+          }
+          
+          setInterval(actualizarReloj, 1000);
+        
+        </script>
+        </center>
+ <center> <h1>HOTELES</h1></center>
+        
+    <!--! Barra de navegacion -->
+
+          
+     <!--principal-->
+     <header class="header" id="inicio"> 
+        <img src="./img/menuuuu.png" alt="" class="menu">
+        <nav class="menu-navegacion">
+            
+            <a button type="button" class="btn btn-outline-secondary"  href="./index.html">Inicio</a>
+    
+</body>
+</html>

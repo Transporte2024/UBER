@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/UBER/pages/style/style.css">
+    <title>TRANSPORTES TEQUILA</title>
+</head>
+<body>
+    <div class="loader"></div>
+
+
+ 
+        <!--fecha-->
+        <center>
+          <nav class="horita">
+            <div id="fecha-actual"></div>
+          <script>
+            const fechaActual = new Date();
+            const dia = fechaActual.getDate();
+            const mes = fechaActual.getMonth() + 1; 
+            const anio = fechaActual.getFullYear();
+            const fechaFormateada = `${dia}/${mes}/${anio}`;
+            document.getElementById("fecha-actual").textContent = `Fecha actual: ${fechaFormateada}`;
+          </script>
+          
+        <!--hora-->
+          <nav class="relojcitoo">
+        <div id="reloj"></div>
+        <script>
+          function actualizarReloj() {
+            const ahora = new Date();
+            const hora = ahora.getHours();
+            const minutos = ahora.getMinutes();
+            const segundos = ahora.getSeconds();
+            const reloj = document.getElementById("reloj");
+            reloj.textContent = `${hora}:${minutos}:${segundos}`;
+          }
+          
+          setInterval(actualizarReloj, 1000);
+        
+        </script>
+        </center>
+ <center> <h1>TRANSPORTES TEQUILA</h1></center>
+        
+    <!--! Barra de navegacion -->
+
+          
+     <!--principal-->
+     <header class="header" id="inicio"> 
+        <img src="./img/menuuuu.png" alt="" class="menu">
+        <nav class="menu-navegacion">
+            
+            <a button type="button" class="btn btn-outline-secondary"  href="#">Inicio</a>
+            <a button type="button" class="btn btn-outline-secondary"  href="/pages/Hoteles.html">Hoteles</a>
+    <center>
+      <h3>
+<p class="tt">
+  En Servicios Ejecutivos de Transporte en Tequila, Jalisco, <br>
+  nos enorgullecemos de ofrecer viajes de la más alta calidad tanto en servicios locales como foráneos. <br>
+  Además de brindar un servicio excepcional en Tequila, <br>
+  nuestro equipo está comprometido en ayudarte a llegar a destinos populares como <br>
+  Puerto Vallarta, Tala, Guadalajara y muchos más.
+</p>
+
+<p class="tt">
+  Ya sea que necesites realizar viajes con pocos pasajeros <br>
+  o requieras un vehículo adecuado para transportar a tu familia, <br>
+  contamos con una flota moderna y conductores profesionales <br>
+  para garantizar tu comodidad y seguridad en cada trayecto. <br>
+  Nuestra misión es proporcionar una experiencia de transporte superior, <br>
+  adaptándonos a tus necesidades específicas y superando tus expectativas en cada viaje.
+</p>
+  
+<p class="tt">
+  Confía en nosotros para todas tus necesidades de transporte. <br>
+  Estamos aquí para ofrecerte un servicio ejecutivo de primera clase, <br>
+  caracterizado por nuestra puntualidad, eficiencia y atención personalizada. <br>
+  No importa cuál sea tu destino, estamos listos para llevarte allí con la máxima comodidad y estilo.
+</p>
+</p></h3>
+
+  </center>
+</body>
+</html>
