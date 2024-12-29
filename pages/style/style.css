@@ -1,26 +1,230 @@
 body{
-background: grey;
+background: rgb(246, 249, 217);
 }
 
 .tt{
 
-        font-family: 'Times New Roman', Times, serif; /* Cambia 'Roboto' a la fuente que hayas elegido */
-        font-size: 20px;  /* Ajusta el tamaño de la fuente según tus necesidades */
+        font-family: 'Times New Roman', Times, serif; 
+        font-size: 20px; 
     
     
 }
 
-.header{
-    height: 70vh;
-    background-image: linear-gradient(
-      to top, 
-      rgba(255, 255, 255, 0.607) 0%,  /* Cambia el color y la opacidad según sea necesario */
-      rgba(255, 255, 255, 0.609) 100%
-    ), 
-    url(/img/icon.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    
+.btn{
+  text-decoration-color: black;
 }
+
+
+/*GALERIA*/
+
+.gallery{
+  background: #f2f2c3;
+  margin-top: 40px;
+
+}
+
+
+.contenedor-galeria{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+
+.img-galeria{
+  width: 20%;
+  transition: width 0.5;
+  border-radius: 5%;
+  display: block;
+  margin-top: 2%;
+  margin-bottom: 25px;
+  box-shadow: 0 0 26px rgb(18, 23, 17);
+  cursor: pointer;
+}
+
+/*CONTENEDORES*/
+
+
+/*MENUUUUUUUUS*/
+
+.menu{
+  position: fixed;
+  z-index: 10;
+  top: 30px;
+  right: 40px;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.menu-navegacion{
+  top: 0;
+  position: fixed;
+  z-index: 1;
+  width: 30vw;
+  height: 100%;
+  background-image: url(/UBER/img/FONDO.png);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  right: 0%;
+  transform: translateX(110%);
+  transition: trasform 0.3s ease-in-out;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.486)
+}
+
+.spread{
+  transform: translate(0);
+}
+.iconmenu{
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  background: #fff;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+
+
+
+.agregar-imagen{
+  width: 60%;
+  border-radius: 10px;
+  transform: scale(0);
+  transition: transform .3s .2s;
+}
+
+
+.imagen-light{
+position: fixed;
+background: rgba(0, 0, 0, 0.534);
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+transform: translate(100%);
+transition: transform .2s ease-in-out;
+}
+
+
+.close{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.show{
+transform: translate(0);
+}
+
+.brand{
+font-weight: 500;
+font-size: 40px;
+}
+
+
+.showImage{
+  transform: scale(1);
+}
+
+#galeria img{
+  width: 250px;
+  transition: all 300ms;
+  position: relative;
+}
+
+#galeria img:hover{
+  transform: scale(1.15);
+}
+
+
+/*TABLAAAAAAAAAA*/
+
+
+.table {
+  margin-bottom: 40px;
+  width: 80%;
+  margin: 0 auto;  
+  border-collapse: collapse;
+  text-align: center; 
+  font-family: 'Times New Roman', Times, serif; 
+}
+
+.table th, .table td {
+  border: 1px solid #171515;
+  padding: 8px;
+}
+
+.table th {
+  background-color: #fffcb9;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.table tr:nth-child(even) {
+  background-color: #b61515;  /* Color de fondo para filas pares */
+}
+
+.table tr:hover {
+  background-color: #eee657;  /* Color de fondo al pasar el ratón sobre una fila */
+}
+
+.table-warning {
+  background-color: #706606;  /* Color de fondo para celdas de advertencia */
+}
+
+.table th.scope-col {
+  width: 30%;  /* Ajusta el ancho de cada columna para que estén proporcionadas */
+}
+
+
+/*HOTEL INFO*/
+ .tu{
+  font-family: 'Times New Roman', Times, serif; 
+  font-size: 22px; 
+ }
+
+
+ /*CONTACTO ESLOGAN*/
+
+ .cont{
+  font-family:'Times New Roman', Times, serif;
+  font-size: 28px;
+  justify-content: center;
+ }
+
+ /* Responsive Styles */
+  @media (max-width: 768px) { 
+    .header {
+       padding: 20px; 
+      } 
+
+      .menu-navegacion {
+         flex-direction: column; 
+        } 
+        
+        .img-galeria {
+           width: 90%; 
+           margin: 10px auto;
+           } 
+          }
+           @media (max-width: 480px) {
+             .tt {
+               font-size: 1rem; 
+              } 
+              .header h1 {
+                 font-size: 1.5rem; 
+                } 
+              }
