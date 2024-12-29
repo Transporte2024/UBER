@@ -228,3 +228,64 @@ font-size: 40px;
                  font-size: 1.5rem; 
                 } 
               }
+
+              /*SUB INDEX*/
+
+              .subtt{
+                font-family:Georgia, 'Times New Roman', Times, serif;
+              }
+
+              /*ICONO WHATSAPP*/
+
+              .fab.fa-whatsapp {
+                color: #25D366; 
+                margin-left: 10px;
+                font-size: 1.2em;
+                vertical-align: middle;
+            }
+            
+            .table-warning a {
+                text-decoration: none;
+            }
+            
+            .table-warning a:hover {
+                color: #165049; 
+            }
+            
+
+            /*FACEBOOK*/
+            footer {
+              background-color:  rgb(246, 249, 217);
+              padding: 20px 0;
+          }
+          
+          .contenedor.footer-contenido {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              text-align: center;
+          }
+          
+          .redes-sociales {
+              margin-top: 10px;
+          }
+          
+          .redes-sociales a {
+              text-decoration: none;
+              color: #3b5998; /* Color azul de Facebook */
+              font-size: 1.2em;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 10px; /* Espacio entre el icono y el texto */
+          }
+          
+          .redes-sociales a i {
+              font-size: 1.5em;
+          }
+          
+          .redes-sociales a:hover {
+              color: #2d4373; /* Color más oscuro al pasar el cursor */
+          }
+          
+          
