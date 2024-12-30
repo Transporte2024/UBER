@@ -2,13 +2,42 @@ body{
 background: rgb(246, 249, 217);
 }
 
-.tt{
-
-        font-family: 'Times New Roman', Times, serif; 
-        font-size: 20px; 
-    
-    
+.tt-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
 }
+
+.tt-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tt {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  text-align: justify;
+  max-width: 600px; /* Ajusta el ancho según sea necesario */
+  margin: 0 auto; /* Centra los párrafos */
+  line-height: 1.6; /* Asegura un espaciado uniforme entre líneas */
+}
+
+@media (max-width: 768px) {
+  .tt {
+      max-width: 90%; /* Ajusta el ancho para dispositivos móviles */
+  }
+}
+
+
+
+
+
 
 .btn{
   text-decoration-color: black;
@@ -191,10 +220,31 @@ font-size: 40px;
 
 
 /*HOTEL INFO*/
- .tu{
-  font-family: 'Times New Roman', Times, serif; 
-  font-size: 22px; 
- }
+.tu-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tu {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 22px;
+  text-align: justify;
+  text-align-last: center;
+  max-width: 600px; /* Ajusta el ancho según sea necesario */
+  margin: 0 auto; /* Centra los párrafos */
+  line-height: 1.6; /* Asegura un espaciado uniforme entre líneas */
+}
+
+@media (max-width: 768px) {
+  .tu {
+      max-width: 90%; /* Ajusta el ancho para dispositivos móviles */
+  }
+}
+
 
 
  /*CONTACTO ESLOGAN*/
@@ -286,6 +336,30 @@ font-size: 40px;
           
           .redes-sociales a:hover {
               color: #2d4373; /* Color más oscuro al pasar el cursor */
+          }
+
+
+
+            /*CONTACTOS DE LA TABLA*/
+
+            .tcont-container {
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              text-align: center;
+              margin-bottom: 20px; /* Espacio entre el texto y la tabla */
+          }
+          
+          .tcont {
+              font-family: 'Times New Roman', Times, serif;
+              font-size: 24px;
+              max-width: 800px; /* Ajusta el ancho según sea necesario */
+              margin: 0 auto; /* Centra el texto */
+              line-height: 1.6; /* Espaciado uniforme entre líneas */
+              padding: 20px; /* Espacio interior del contenedor */
+              background-color:rgb(246, 249, 217); /* Color de fondo para destacar el texto */
+              border-radius: 10px; /* Bordes redondeados */
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para un efecto de profundidad */
           }
           
           
