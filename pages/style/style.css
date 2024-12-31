@@ -20,7 +20,7 @@ background: rgb(246, 249, 217);
 }
 
 .tt {
-  font-family: 'Times New Roman', Times, serif;
+  font-family:'Times New Roman', Times, serif;
   font-size: 20px;
   text-align: justify;
   max-width: 600px; /* Ajusta el ancho según sea necesario */
@@ -41,6 +41,7 @@ background: rgb(246, 249, 217);
 
 .btn{
   text-decoration-color: black;
+  border-radius: 40px;
 }
 
 
