@@ -384,3 +384,12 @@ font-size: 40px;
           .btn-outline-secondary { 
             color: black;
           }
+
+
+          /*RESPONSIVAAAAA*/
+
+          img {
+            max-width: 100%;
+            height: auto;
+        }
+        
