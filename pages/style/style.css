@@ -359,7 +359,20 @@ font-size: 40px;
               padding: 20px; /* Espacio interior del contenedor */
               background-color:rgb(246, 249, 217); /* Color de fondo para destacar el texto */
               border-radius: 10px; /* Bordes redondeados */
-              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para un efecto de profundidad */
+              
           }
           
           
+          /*ENCABEZADO*/
+
+          .titu{
+            color: #423327;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+          }
+
+          /*BOTONES*/
+
+
+          .btn-outline-secondary { 
+            color: black;
+          }
